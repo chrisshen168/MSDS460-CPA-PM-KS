@@ -1,209 +1,225 @@
-Best Case Projection
-
-/opt/anaconda3/envs/restart_env/lib/python3.10/site-packages/pulp/pulp.py:1352: UserWarning: Spaces are not permitted in the name. Converted to '_'
+==========================BestCase==========================
+/Users/mjd/Desktop/anaconda3/envs/myenv/lib/python3.11/site-packages/pulp/pulp.py:1352: UserWarning: Spaces are not permitted in the name. Converted to '_'
   warnings.warn("Spaces are not permitted in the name. Converted to '_'")
 Welcome to the CBC MILP Solver 
-Version: 2.10.3 
-Build Date: Dec 15 2019 
+Version: 2.10.5 
+Build Date: May 10 2021 
 
-command line - /opt/anaconda3/envs/restart_env/lib/python3.10/site-packages/pulp/solverdir/cbc/osx/64/cbc /var/folders/l8/qnr45km55b108dfwvptknbbrd2yq0h/T/ab96770edc1a4567a805f557d52df7d6-pulp.mps timeMode elapsed branch printingOptions all solution /var/folders/l8/qnr45km55b108dfwvptknbbrd2yq0h/T/ab96770edc1a4567a805f557d52df7d6-pulp.sol (default strategy 1)
+command line - cbc /var/folders/xf/sym_dm2d1dq_7998vxvr369m0000gn/T/3eb8f637ef764ec780f7a16f92ccba66-pulp.mps timeMode elapsed branch printingOptions all solution /var/folders/xf/sym_dm2d1dq_7998vxvr369m0000gn/T/3eb8f637ef764ec780f7a16f92ccba66-pulp.sol (default strategy 1)
 At line 2 NAME          MODEL
 At line 3 ROWS
 At line 39 COLUMNS
 At line 109 RHS
 At line 144 BOUNDS
-At line 146 ENDATA
-Problem MODEL has 34 rows, 31 columns and 68 elements
+At line 145 ENDATA
+Problem MODEL has 34 rows, 30 columns and 68 elements
 Coin0008I MODEL read with 0 errors
 Option for timeMode changed from cpu to elapsed
-Presolve 0 (-34) rows, 0 (-31) columns and 0 (-68) elements
+Presolve 0 (-34) rows, 0 (-30) columns and 0 (-68) elements
 Empty problem - 0 rows, 0 columns and 0 elements
-Optimal - objective value 0
-After Postsolve, objective 0, infeasibilities - dual 0 (0), primal 0 (0)
-Optimal objective 0 - 0 iterations time 0.002, Presolve 0.00
+Optimal - objective value 872
+After Postsolve, objective 872, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 872 - 0 iterations time 0.002, Presolve 0.00
 Option for printingOptions changed from normal to all
-Total time (CPU seconds):       0.00   (Wallclock seconds):       0.01
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
 
-Critical Path time:
+BestCase Projection:
 A starts at time 0
 B starts at time 0
 H takes 872.0 hours in duration
-Projects takes 872.0 hours in duration
-Projects takes 109.0 days in duration
-Projects takes 21.8 weeks in duration
-Projects takes 5.45 months in duration
+Project takes 872.0 hours in duration
+Project takes 109.0 days in duration
+Project takes 21.8 weeks in duration
+Project takes 5.45 months in duration
 Project costs 43600.0 in Wages
-Project costs 54500.0 to Company (includes Markup)
+Project costs 54500.0 to the company (includes Markup)
 
-Solution variable values:
-__dummy = None
-end_A = 20.0
-end_B = 800.0
-end_C = 30.0
-end_D1 = 100.0
-end_D2 = 140.0
-end_D3 = 180.0
-end_D4 = 300.0
-end_D5 = 340.0
-end_D6 = 324.0
-end_D7 = 444.0
-end_D8 = 468.0
-end_E = 824.0
-end_F = 848.0
-end_G = 492.0
-end_H = 872.0
-start_A = 0.0
-start_B = 0.0
-start_C = 20.0
-start_D1 = 20.0
-start_D2 = 100.0
-start_D3 = 100.0
-start_D4 = 180.0
-start_D5 = 300.0
-start_D6 = 300.0
-start_D7 = 324.0
-start_D8 = 444.0
-start_E = 800.0
-start_F = 824.0
-start_G = 468.0
-start_H = 848.0
+Sensitivity Analysis (Shadow Prices):
+Shadow Price for A_duration: 0.0
+Shadow Price for B_duration: 1.0
+Shadow Price for C_duration: -0.0
+Shadow Price for D1_duration: -0.0
+Shadow Price for D2_duration: -0.0
+Shadow Price for D3_duration: -0.0
+Shadow Price for D4_duration: -0.0
+Shadow Price for D5_duration: -0.0
+Shadow Price for D6_duration: -0.0
+Shadow Price for D7_duration: -0.0
+Shadow Price for D8_duration: -0.0
+Shadow Price for E_duration: 1.0
+Shadow Price for F_duration: 1.0
+Shadow Price for G_duration: -0.0
+Shadow Price for H_duration: 1.0
 
-Expected Projection
+Sensitivity Analysis (Slack Values):
+Slack for C_predecessor_A: -0.0
+Slack for D1_predecessor_A: -0.0
+Slack for D2_predecessor_D1: -0.0
+Slack for D3_predecessor_D1: -0.0
+Slack for D4_predecessor_D2: -40.0
+Slack for D4_predecessor_D3: -0.0
+Slack for D5_predecessor_D4: -0.0
+Slack for D6_predecessor_D4: -0.0
+Slack for D7_predecessor_D6: -0.0
+Slack for D8_predecessor_D5: -104.0
+Slack for D8_predecessor_D7: -0.0
+Slack for E_predecessor_B: -0.0
+Slack for E_predecessor_C: -770.0
+Slack for F_predecessor_D8: -356.0
+Slack for F_predecessor_E: -0.0
+Slack for G_predecessor_A: -448.0
+Slack for G_predecessor_D8: -0.0
+Slack for H_predecessor_F: -0.0
+Slack for H_predecessor_G: -356.0
 
-/opt/anaconda3/envs/restart_env/lib/python3.10/site-packages/pulp/pulp.py:1352: UserWarning: Spaces are not permitted in the name. Converted to '_'
+
+
+==========================Expected==========================
+/Users/mjd/Desktop/anaconda3/envs/myenv/lib/python3.11/site-packages/pulp/pulp.py:1352: UserWarning: Spaces are not permitted in the name. Converted to '_'
   warnings.warn("Spaces are not permitted in the name. Converted to '_'")
 Welcome to the CBC MILP Solver 
-Version: 2.10.3 
-Build Date: Dec 15 2019 
+Version: 2.10.5 
+Build Date: May 10 2021 
 
-command line - /opt/anaconda3/envs/restart_env/lib/python3.10/site-packages/pulp/solverdir/cbc/osx/64/cbc /var/folders/l8/qnr45km55b108dfwvptknbbrd2yq0h/T/888bfe1bb4b24d9eb90bf4dfdba42c5c-pulp.mps timeMode elapsed branch printingOptions all solution /var/folders/l8/qnr45km55b108dfwvptknbbrd2yq0h/T/888bfe1bb4b24d9eb90bf4dfdba42c5c-pulp.sol (default strategy 1)
+command line - cbc /var/folders/xf/sym_dm2d1dq_7998vxvr369m0000gn/T/5822fd10150649d0b75c67ed9d2aa9c5-pulp.mps timeMode elapsed branch printingOptions all solution /var/folders/xf/sym_dm2d1dq_7998vxvr369m0000gn/T/5822fd10150649d0b75c67ed9d2aa9c5-pulp.sol (default strategy 1)
 At line 2 NAME          MODEL
 At line 3 ROWS
 At line 39 COLUMNS
 At line 109 RHS
 At line 144 BOUNDS
-At line 146 ENDATA
-Problem MODEL has 34 rows, 31 columns and 68 elements
+At line 145 ENDATA
+Problem MODEL has 34 rows, 30 columns and 68 elements
 Coin0008I MODEL read with 0 errors
 Option for timeMode changed from cpu to elapsed
-Presolve 0 (-34) rows, 0 (-31) columns and 0 (-68) elements
+Presolve 0 (-34) rows, 0 (-30) columns and 0 (-68) elements
 Empty problem - 0 rows, 0 columns and 0 elements
-Optimal - objective value 0
-After Postsolve, objective 0, infeasibilities - dual 0 (0), primal 0 (0)
-Optimal objective 0 - 0 iterations time 0.002, Presolve 0.00
+Optimal - objective value 1736
+After Postsolve, objective 1736, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 1736 - 0 iterations time 0.002, Presolve 0.00
 Option for printingOptions changed from normal to all
 Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
 
-Critical Path time:
+Expected Projection:
 A starts at time 0
 B starts at time 0
 H takes 1736.0 hours in duration
-Projects takes 1736.0 hours in duration
-Projects takes 217.0 days in duration
-Projects takes 43.4 weeks in duration
-Projects takes 10.85 months in duration
+Project takes 1736.0 hours in duration
+Project takes 217.0 days in duration
+Project takes 43.4 weeks in duration
+Project takes 10.85 months in duration
 Project costs 86800.0 in Wages
-Project costs 108500.0 to Company (includes Markup)
+Project costs 108500.0 to the company (includes Markup)
 
-Solution variable values:
-__dummy = None
-end_A = 30.0
-end_B = 1600.0
-end_C = 45.0
-end_D1 = 150.0
-end_D2 = 230.0
-end_D3 = 270.0
-end_D4 = 570.0
-end_D5 = 630.0
-end_D6 = 642.0
-end_D7 = 862.0
-end_D8 = 934.0
-end_E = 1652.0
-end_F = 1704.0
-end_G = 966.0
-end_H = 1736.0
-start_A = 0.0
-start_B = 0.0
-start_C = 30.0
-start_D1 = 30.0
-start_D2 = 150.0
-start_D3 = 150.0
-start_D4 = 270.0
-start_D5 = 570.0
-start_D6 = 570.0
-start_D7 = 642.0
-start_D8 = 862.0
-start_E = 1600.0
-start_F = 1652.0
-start_G = 934.0
-start_H = 1704.0
+Sensitivity Analysis (Shadow Prices):
+Shadow Price for A_duration: 0.0
+Shadow Price for B_duration: 1.0
+Shadow Price for C_duration: -0.0
+Shadow Price for D1_duration: -0.0
+Shadow Price for D2_duration: -0.0
+Shadow Price for D3_duration: -0.0
+Shadow Price for D4_duration: -0.0
+Shadow Price for D5_duration: -0.0
+Shadow Price for D6_duration: -0.0
+Shadow Price for D7_duration: -0.0
+Shadow Price for D8_duration: -0.0
+Shadow Price for E_duration: 1.0
+Shadow Price for F_duration: 1.0
+Shadow Price for G_duration: -0.0
+Shadow Price for H_duration: 1.0
 
-Worst Case Projection
+Sensitivity Analysis (Slack Values):
+Slack for C_predecessor_A: -0.0
+Slack for D1_predecessor_A: -0.0
+Slack for D2_predecessor_D1: -0.0
+Slack for D3_predecessor_D1: -0.0
+Slack for D4_predecessor_D2: -40.0
+Slack for D4_predecessor_D3: -0.0
+Slack for D5_predecessor_D4: -0.0
+Slack for D6_predecessor_D4: -0.0
+Slack for D7_predecessor_D6: -0.0
+Slack for D8_predecessor_D5: -232.0
+Slack for D8_predecessor_D7: -0.0
+Slack for E_predecessor_B: -0.0
+Slack for E_predecessor_C: -1555.0
+Slack for F_predecessor_D8: -718.0
+Slack for F_predecessor_E: -0.0
+Slack for G_predecessor_A: -904.0
+Slack for G_predecessor_D8: -0.0
+Slack for H_predecessor_F: -0.0
+Slack for H_predecessor_G: -738.0
 
-/opt/anaconda3/envs/restart_env/lib/python3.10/site-packages/pulp/pulp.py:1352: UserWarning: Spaces are not permitted in the name. Converted to '_'
+
+
+==========================WorstCase==========================
+/Users/mjd/Desktop/anaconda3/envs/myenv/lib/python3.11/site-packages/pulp/pulp.py:1352: UserWarning: Spaces are not permitted in the name. Converted to '_'
   warnings.warn("Spaces are not permitted in the name. Converted to '_'")
 Welcome to the CBC MILP Solver 
-Version: 2.10.3 
-Build Date: Dec 15 2019 
+Version: 2.10.5 
+Build Date: May 10 2021 
 
-command line - /opt/anaconda3/envs/restart_env/lib/python3.10/site-packages/pulp/solverdir/cbc/osx/64/cbc /var/folders/l8/qnr45km55b108dfwvptknbbrd2yq0h/T/62d140abc6f5433287ac8fbd30a53ae6-pulp.mps timeMode elapsed branch printingOptions all solution /var/folders/l8/qnr45km55b108dfwvptknbbrd2yq0h/T/62d140abc6f5433287ac8fbd30a53ae6-pulp.sol (default strategy 1)
+command line - cbc /var/folders/xf/sym_dm2d1dq_7998vxvr369m0000gn/T/84bb480c2e594821998f38757f805bd8-pulp.mps timeMode elapsed branch printingOptions all solution /var/folders/xf/sym_dm2d1dq_7998vxvr369m0000gn/T/84bb480c2e594821998f38757f805bd8-pulp.sol (default strategy 1)
 At line 2 NAME          MODEL
 At line 3 ROWS
 At line 39 COLUMNS
 At line 109 RHS
 At line 144 BOUNDS
-At line 146 ENDATA
-Problem MODEL has 34 rows, 31 columns and 68 elements
+At line 145 ENDATA
+Problem MODEL has 34 rows, 30 columns and 68 elements
 Coin0008I MODEL read with 0 errors
 Option for timeMode changed from cpu to elapsed
-Presolve 0 (-34) rows, 0 (-31) columns and 0 (-68) elements
+Presolve 0 (-34) rows, 0 (-30) columns and 0 (-68) elements
 Empty problem - 0 rows, 0 columns and 0 elements
-Optimal - objective value 0
-After Postsolve, objective 0, infeasibilities - dual 0 (0), primal 0 (0)
-Optimal objective 0 - 0 iterations time 0.002, Presolve 0.00
+Optimal - objective value 2600
+After Postsolve, objective 2600, infeasibilities - dual 0 (0), primal 0 (0)
+Optimal objective 2600 - 0 iterations time 0.002, Presolve 0.00
 Option for printingOptions changed from normal to all
 Total time (CPU seconds):       0.00   (Wallclock seconds):       0.00
 
-Critical Path time:
+WorstCase Projection:
 A starts at time 0
 B starts at time 0
 H takes 2600.0 hours in duration
-Projects takes 2600.0 hours in duration
-Projects takes 325.0 days in duration
-Projects takes 65.0 weeks in duration
-Projects takes 16.25 months in duration
+Project takes 2600.0 hours in duration
+Project takes 325.0 days in duration
+Project takes 65.0 weeks in duration
+Project takes 16.25 months in duration
 Project costs 130000.0 in Wages
-Project costs 162500.0 to Company (includes Markup)
+Project costs 162500.0 to the company (includes Markup)
 
-Solution variable values:
-__dummy = None
-end_A = 40.0
-end_B = 2400.0
-end_C = 60.0
-end_D1 = 200.0
-end_D2 = 320.0
-end_D3 = 360.0
-end_D4 = 840.0
-end_D5 = 920.0
-end_D6 = 960.0
-end_D7 = 1280.0
-end_D8 = 1400.0
-end_E = 2480.0
-end_F = 2560.0
-end_G = 1440.0
-end_H = 2600.0
-start_A = 0.0
-start_B = 0.0
-start_C = 40.0
-start_D1 = 40.0
-start_D2 = 200.0
-start_D3 = 200.0
-start_D4 = 360.0
-start_D5 = 840.0
-start_D6 = 840.0
-start_D7 = 960.0
-start_D8 = 1280.0
-start_E = 2400.0
-start_F = 2480.0
-start_G = 1400.0
-start_H = 2560.0
+Sensitivity Analysis (Shadow Prices):
+Shadow Price for A_duration: 0.0
+Shadow Price for B_duration: 1.0
+Shadow Price for C_duration: -0.0
+Shadow Price for D1_duration: -0.0
+Shadow Price for D2_duration: -0.0
+Shadow Price for D3_duration: -0.0
+Shadow Price for D4_duration: -0.0
+Shadow Price for D5_duration: -0.0
+Shadow Price for D6_duration: -0.0
+Shadow Price for D7_duration: -0.0
+Shadow Price for D8_duration: -0.0
+Shadow Price for E_duration: 1.0
+Shadow Price for F_duration: 1.0
+Shadow Price for G_duration: -0.0
+Shadow Price for H_duration: 1.0
+
+Sensitivity Analysis (Slack Values):
+Slack for C_predecessor_A: -0.0
+Slack for D1_predecessor_A: -0.0
+Slack for D2_predecessor_D1: -0.0
+Slack for D3_predecessor_D1: -0.0
+Slack for D4_predecessor_D2: -40.0
+Slack for D4_predecessor_D3: -0.0
+Slack for D5_predecessor_D4: -0.0
+Slack for D6_predecessor_D4: -0.0
+Slack for D7_predecessor_D6: -0.0
+Slack for D8_predecessor_D5: -360.0
+Slack for D8_predecessor_D7: -0.0
+Slack for E_predecessor_B: -0.0
+Slack for E_predecessor_C: -2340.0
+Slack for F_predecessor_D8: -1080.0
+Slack for F_predecessor_E: -0.0
+Slack for G_predecessor_A: -1360.0
+Slack for G_predecessor_D8: -0.0
+Slack for H_predecessor_F: -0.0
+Slack for H_predecessor_G: -1120.0
